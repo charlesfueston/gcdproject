@@ -1,9 +1,7 @@
 ---
 title: "Tidy Data Project"
 date: "06-18-2015"
-output:
-  html_document:
-    theme: cerulean
+
 ---
 
 ### Reading Data into R:

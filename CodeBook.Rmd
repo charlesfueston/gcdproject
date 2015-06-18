@@ -1,9 +1,7 @@
 ---
 title: "Code Book"
 date: "06-18-2015"
-output:
-  html_document:
-    theme: cerulean
+
 ---
 
 
