@@ -123,7 +123,6 @@ DataTidy <- rbind(walking3, walking_upstairs3, walking_downstairs3, sitting3, st
 
 write.table(DataTidy, file = "./DataTidy.txt", row.name = FALSE)
 
-
 ```
 
 
