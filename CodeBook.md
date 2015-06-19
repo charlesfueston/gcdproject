@@ -9,10 +9,14 @@ date: "06-19-2015"
 
 ### Introduction:
 
+Students were provided with the raw data (Please see References.)<sup>1</sup> and asked to clean and summarize it.  The final data set is a subset of the original data containing "only the measurements on the mean and standard deviation for each measurement."  Which has been further summarized by taking only "the average of each variable for each activity and each subject."   
+
 
 Study Design: 
 =============
 
+
+**Overview:**
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -37,7 +41,7 @@ separated using a Butterworth low-pass filter into body acceleration and gravity
 components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables 
 from the time and frequency domain. See 'features_info.txt' for more details. 
 
-**Study Design section is quoted from "README.txt".** (Please see References.)$^{1}$
+**Overview section is quoted from "README.txt".** (Please see References.)<sup>1</sup>
 
 
 **Feature Selection:** 
@@ -60,7 +64,7 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 
-**Features section is quoted from "features_info.txt".**  (Please see References.)$^{1}$
+**Features selection section is quoted from "features_info.txt".**  (Please see References.)<sup>1</sup>
 
 
 
@@ -68,15 +72,16 @@ Code book:
 ==========
 
 
-**Attribute labels**
+**Attribute labels:**
 
 - Subject: An identifier of the subject who carried out the experiment
 - Activity: Activity labels: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
+**Variable labels:**
 
-**The following variable labels where taken from the original data set.  It should be note that in this data set "average[s] of each variable for each activity and each subject." were generated. So the following mnemonics now refer to these averages.**
+**The following variable labels were taken from the original data set.  It should be noted that in this data set the "average of each variable for each activity and each subject." was generated. So the following mnemonics now refer to these averages.**
 
-### Descriptions of variable Mnemonic:    
+### Descriptions of variable Mnemonics:    
 
 - tBodyAcc-mean()-X: Time domain signal, Body Acceleration, mean, X-Axis
 - tBodyAcc-mean()-Y: Time domain signal, Body Acceleration, mean, Y-Axis
