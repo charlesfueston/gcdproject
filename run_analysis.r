@@ -3,7 +3,6 @@
 # Link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-
 # This code was run using R version 3.1.3 with the dplyr library as the only extra package. 
 
 
