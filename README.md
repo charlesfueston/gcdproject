@@ -1,6 +1,6 @@
 ---
 title: "Tidy Data Set"
-date: "06-18-2015"
+date: "06-19-2015"
 
 ---
 
