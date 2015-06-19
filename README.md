@@ -1,6 +1,6 @@
 ---
 title: "Tidy Data Set"
-date: "06-18-2015"
+date: "06-19-2015"
 
 ---
 
@@ -8,7 +8,7 @@ date: "06-18-2015"
 ## Step 0
 
 
-Reading Data into R:
+**Reading Data into R:**
 
 
       # Load dplyr
@@ -30,7 +30,7 @@ Reading Data into R:
 
 ## Step 1
 
-Combine data in to one data set:
+**Combine data in to one data set:**
 
 
 
@@ -47,7 +47,7 @@ Combine data in to one data set:
 
 ## Step 2
 
-Extract measurements on the mean and standard deviation:
+**Extract measurements on the mean and standard deviation:**
 
 
 
@@ -63,7 +63,7 @@ Extract measurements on the mean and standard deviation:
 
 ## Step 3 & 4
 
-Label with descriptive activity names and descriptive variable names:
+**Label with descriptive activity names and descriptive variable names:**
 
 
       Names1 <- mutate(MeanStd, Y1 = factor(Y1, labels = activity_labels$V2))
@@ -79,10 +79,10 @@ Label with descriptive activity names and descriptive variable names:
 ## Step 5
 
 
-Create independent tidy data set with the average of each variable for each activity and each subject:
+**Create independent tidy data set with the average of each variable for each activity and each subject:**
 
 
-First create separate data sets for each Activity:
+**First create separate data sets for each Activity:**
 
 
 
@@ -97,7 +97,7 @@ First create separate data sets for each Activity:
 
 
 
-Next generate averages for each Activity by Subject:
+**Next generate averages for each Activity by Subject:**
 
 
 
@@ -111,7 +111,7 @@ Next generate averages for each Activity by Subject:
 
 
 
-Next clean up data sets
+**Next clean up data sets:**
 
 
 
@@ -124,14 +124,14 @@ Next clean up data sets
 
 
 
-Next combine data into one tidy data set
+**Next combine data into one tidy data set:**
 
 
 
       DataTidy <- rbind(walking3, walking_upstairs3, walking_downstairs3, sitting3, standing3, laying3)
 
 
-Generate text file to illistrate tidy data set:
+**Generate text file to illistrate tidy data set:**
 
 
 
