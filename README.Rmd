@@ -1,10 +1,10 @@
 ---
-title: "Tidy Data Project"
+title: "Tidy Data Set"
 date: "06-18-2015"
 
 ---
 
-### Reading Data into R:
+## Reading Data into R:
 
 
 
@@ -30,7 +30,7 @@ trainX <- read.table("./train/X_train.txt")
 
 
 
-### Combine data in to one data set:
+## Combine data in to one data set:
 
 ```{r eval=FALSE}
 
@@ -48,7 +48,7 @@ onedataset <- rbind(testAll, trainAll)
 
 ```
 
-### Extract measurements on the mean and standard deviation:
+## Extract measurements on the mean and standard deviation:
 
 ```{r eval=FALSE}
 
@@ -65,7 +65,7 @@ MeanStd <- onedataset[, fIndex]
 ```
 
 
-### Label with descriptive activity names and descriptive variable names:
+## Label with descriptive activity names and descriptive variable names:
 
 ```{r eval=FALSE}
 
@@ -81,7 +81,11 @@ DataSet1 <- arrange(Names1, Activity, Subject)
 
 ```
 
-### Create independent tidy data set with the average of each variable for each activity and each subject:
+## Create independent tidy data set with the average of each variable for each activity and each subject:
+
+
+## First create separate data sets for each Activity:
+
 
 ```{r eval=FALSE}
 
@@ -93,6 +97,11 @@ sitting <- DataSet1[(DataSet1$Activity == "SITTING"),]
 standing <- DataSet1[(DataSet1$Activity == "STANDING"),]
 laying <- DataSet1[(DataSet1$Activity == "LAYING"),]
 
+```
+
+## Next generate averages for each Activity by Subject:
+
+```{r eval = FALSE}
 
 walking2 <- walking%>% group_by(Subject)%>% summarise_each(funs(mean))
 walking_upstairs2 <- walking_upstairs%>% group_by(Subject)%>% summarise_each(funs(mean))
@@ -101,6 +110,12 @@ sitting2 <- sitting%>% group_by(Subject)%>% summarise_each(funs(mean))
 standing2 <- standing%>% group_by(Subject)%>% summarise_each(funs(mean))
 laying2 <- laying%>% group_by(Subject)%>% summarise_each(funs(mean))
 
+```
+
+
+## Next clean up data sets
+
+```{r eval = FALSE}
 
 walking3 <- mutate(walking2, Activity = factor(Activity, labels = "WALKING"))
 walking_upstairs3 <- mutate(walking_upstairs2, Activity = factor(Activity, labels = "WALKING_UPSTAIRS"))
@@ -109,15 +124,22 @@ sitting3 <- mutate(sitting2, Activity = factor(Activity, labels = "SITTING"))
 standing3 <- mutate(standing2, Activity = factor(Activity, labels = "STANDING"))
 laying3 <- mutate(laying2, Activity = factor(Activity, labels = "LAYING"))
 
+```
+
+
+## Next combine data into one tidy data set
+
+``` {r eval = FALSE}
 
 DataTidy <- rbind(walking3, walking_upstairs3, walking_downstairs3, sitting3, standing3, laying3)
 
 
 ```
 
-### Data:
+## Generate text file to illistrate tidy data set:
 
 ```{r eval=FALSE}
+
 
 write.table(DataTidy, file = "./DataTidy.txt", row.name = FALSE)
 
