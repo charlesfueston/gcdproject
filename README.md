@@ -10,13 +10,13 @@ date: "06-19-2015"
 
 **Reading Data into R:**
 
-**Hint: If you unpacked the data into a directory called "UCI HAR Dataset" utilize that directory as your working directory - setwd("./UCI HAR Dataset")**
+**Hint: If you unpacked the data into a subdirectory called "UCI HAR Dataset" utilize that directory as your working directory - setwd("./UCI HAR Dataset")**
 
 
       # The "Samsung data" should be loaded into your working directory before running this code.
       # Link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
       
-      # Hint: If you unpacked the data into a directory called "UCI HAR Dataset" 
+      # Hint: If you unpacked the data into a subdirectory called "UCI HAR Dataset" 
       # utilize that directory as your working directory - setwd("./UCI HAR Dataset")
 
       # This code was run using R version 3.1.3 with the dplyr library as the only extra package. 
