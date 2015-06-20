@@ -72,6 +72,12 @@ Code book:
 ==========
 
 
+**Data set:**
+
+The final data set is 68 columns by 180 rows.  Two columns contain attributes and 66 columns contain variables.  Each row contains the mean value, measured in cycles per second, of the mean and standard deviation for each activity performed by each subject. (30 subjects times 6 activities = 180)  
+
+
+
 **Attribute labels:**
 
 - Subject: An identifier of the subject who carried out the experiment
