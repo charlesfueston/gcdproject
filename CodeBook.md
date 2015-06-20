@@ -9,7 +9,7 @@ date: "06-19-2015"
 
 ### Introduction:
 
-Students were provided with the raw data (Please see References.)<sup>1</sup> and asked to clean and summarize it.  The final data set is a subset of the original data containing "only the measurements on the mean and standard deviation for each measurement."  Which has been further summarized by taking only "the average of each variable for each activity and each subject."   
+Students were provided with the raw data (Please see References.)<sup>2</sup> and asked to clean and summarize it.  The final data set is a subset of the original data containing "only the measurements on the mean and standard deviation for each measurement."  Which has been further summarized by taking only "the average of each variable for each activity and each subject."   
 
 
 Study Design: 
@@ -41,7 +41,7 @@ separated using a Butterworth low-pass filter into body acceleration and gravity
 components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables 
 from the time and frequency domain. See 'features_info.txt' for more details. 
 
-**Overview section is quoted from "README.txt".** (Please see References.)<sup>1</sup>
+**Overview section is quoted from "README.txt".** (Please see References.)<sup>2</sup>
 
 
 **Feature Selection:** 
@@ -64,7 +64,7 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 
-**Features selection section is quoted from "features_info.txt".**  (Please see References.)<sup>1</sup>
+**Features selection section is quoted from "features_info.txt".**  (Please see References.)<sup>2</sup>
 
 
 
@@ -79,7 +79,7 @@ Code book:
 
 **Variable labels:**
 
-**The following variable labels were taken from the original data set.  It should be noted that in this data set the "average of each variable for each activity and each subject." was generated. So the following mnemonics now refer to these averages.**
+**The following variable labels were taken from the original data set. (Please see special notes)<sup>1</sup>   It should be noted that for this data set a summary was calculated for the "average of each variable for each activity and each subject". So the following mnemonics now refer to these averages measured in cycle per second.(Please see special notes)<sup>1</sup>**
 
 ### Descriptions of variable Mnemonics:    
 
@@ -101,7 +101,7 @@ Code book:
 - tBodyAccJerk-std()-X: Time domain signal, Body Acceleration Jerk, Standard deviation, X-Axis
 - tBodyAccJerk-std()-Y: Time domain signal, Body Acceleration Jerk, Standard deviation, Y-Axis
 - tBodyAccJerk-std()-Z: Time domain signal, Body Acceleration Jerk, Standard deviation,
-- tBodyGyro-mean()-X: Time domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis
+- tBodyGyro-mean()-X: Time domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis, Unit of Measure: Radians
 - tBodyGyro-mean()-Y: Time domain signal, Body Angular Velocity (Gyroscope), mean, Y-Axis
 - tBodyGyro-mean()-Z: Time domain signal, Body Angular Velocity (Gyroscope), mean, Z-Axis
 - tBodyGyro-std()-X: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, X-Axis
@@ -119,7 +119,7 @@ Code book:
 - tGravityAccMag-std(): Time domain signal, Gravity Acceleration Magnitude, Standard deviation
 - tBodyAccJerkMag-mean(): Time domain signal, Body Acceleration Jerk Magntitude, mean
 - tBodyAccJerkMag-std(): Time domain signal, Body Acceleration Jerk Magntitude, Standard deviation
-- tBodyGyroMag-mean(): Time domain signal, Body Angular Velocity Magnitude (Gyroscope), mean
+- tBodyGyroMag-mean(): Time domain signal, Body Angular Velocity Magnitude (Gyroscope), mean 
 - tBodyGyroMag-std(): Time domain signal,  Body Angular Velocity Magnitude (Gyroscope), Standard deviation
 - tBodyGyroJerkMag-mean(): Time domain signal, Body Angular Velocity Jerk Magnitude (Gyroscope), mean
 - tBodyGyroJerkMag-std(): Time domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
@@ -152,10 +152,39 @@ Code book:
 
 
 
+## <sup>1</sup>Special Notes:
+
+
+### Variable labels:
+
+After considering assigning new more "human readable" variable names I made the decision to import the variable labels assigned by the physicists who designed the study.  The grading rubric for the Course Project does not mention variable names so I went to the Community Discussion Forum for guidance. 
+
+
+ ".....but using the existing names (and noting they represent aggregated means in the CodeBook) would be good enough."
+
+David Hood, Course Teaching Assistant
+
+https://class.coursera.org/getdata-015/forum/thread?thread_id=27
+
+
+### Units of Measure:
+
+**The units of measure are cycle per second,**
+
+"The cycle per second was a once-common English name for the unit of frequency now known as the hertz."
+
+https://en.wikipedia.org/wiki/Cycle_per_second
+
+
+**however they can be expressed differently.**
+
+"Even though angular velocity, angular frequency and the unit hertz all have the dimension 1/s (reciprocal second), angular velocity and angular frequency are not expressed in hertz,[5] but rather in an appropriate angular unit such as radians per second."
+
+https://en.wikipedia.org/wiki/Hertz
 
 
 
-### <sup>1</sup>References:
+## <sup>2</sup>References:
 
 
 ### Raw Data:
