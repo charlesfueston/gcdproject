@@ -2,6 +2,8 @@
 # The "Samsung data" should be loaded into your working directory before running this code.
 # Link: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
+# Hint: If you unpacked the data into a subdirectory called "UCI HAR Dataset" 
+# utilize that directory as your working directory - setwd("./UCI HAR Dataset")
 
 # This code was run using R version 3.1.3 with the dplyr library as the only extra package. 
 
@@ -96,3 +98,5 @@ laying3 <- mutate(laying2, Activity = factor(Activity, labels = "LAYING"))
 DataTidy <- rbind(walking3, walking_upstairs3, walking_downstairs3, sitting3, standing3, laying3)
 
 write.table(DataTidy, file = "./DataTidy.txt", row.name = FALSE)
+
+
