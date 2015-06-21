@@ -86,13 +86,15 @@ Before "[e]xtract[ing] only the measurements on the mean and standard deviation 
       Names1 <- mutate(MeanStd, Y1 = factor(Y1, labels = activity_labels$V2))
 
       Names2 <- c("Subject", "Activity", fIndex2$V2)
+      
+      Names3 <- make.names(Names2)
 
-      colnames(Names1) <- Names2
+      colnames(Names1) <- Names3
 
       DataSet1 <- arrange(Names1, Activity, Subject)
 
 
-Using the mutate() function, column Y1 in "MeanStd"  was change into factor labels and "Names1" was created.  Then the column names were stored in an vector called "Names2", and using the colnames() function "Names2" provided the column names for "Names1".  The arrange() function was then used to create a new data.frame called "DataSet1" with the data from "Names1" arranged by "Activity", and "Subject". 
+Using the mutate() function, column Y1 in "MeanStd"  was change into factor labels and "Names1" was created.  Then the column names were stored in an vector called "Names2".  The make.names() function was used to make them syntactically valid variable names and using the colnames() function "Names3" provided the column names for "Names1".  The arrange() function was then used to create a new data.frame called "DataSet1" with the data from "Names1" arranged by "Activity", and "Subject". 
 
 
 ## Step 5
@@ -138,7 +140,7 @@ These data frames were each grouped by "Subject" utilizing the Group_by() functi
       standing3 <- mutate(standing2, Activity = factor(Activity, labels = "STANDING"))
       laying3 <- mutate(laying2, Activity = factor(Activity, labels = "LAYING"))
 
-When R computed the mean using the group_by() and summarise_each() functions it converted the factor labels in the "Activity" column into factor levels.  So the factor function was used to reconvert all these back into factor labels.
+When R computed the mean using the group_by() and summarise_each() functions it converted the factor labels in the "Activity" column into factor levels.  So the mutate() and factor() functions were used to reconvert all these back into factor labels.
 
 
 **Next combine data into one tidy data set:**
