@@ -62,7 +62,9 @@ Names1 <- mutate(MeanStd, Y1 = factor(Y1, labels = activity_labels$V2))
 
 Names2 <- c("Subject", "Activity", fIndex2$V2)
 
-colnames(Names1) <- Names2
+Names3 <- make.names(Names2)
+
+colnames(Names1) <- Names3
 
 DataSet1 <- arrange(Names1, Activity, Subject)
 
