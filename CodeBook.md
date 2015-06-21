@@ -89,72 +89,72 @@ The final data set is 68 columns by 180 rows.  Two columns contain attributes an
 
 ### Descriptions of variable Mnemonics:    
 
-- tBodyAcc-mean()-X: Time domain signal, Body Acceleration, mean, X-Axis
-- tBodyAcc-mean()-Y: Time domain signal, Body Acceleration, mean, Y-Axis
-- tBodyAcc-mean()-Z: Time domain signal, Body Acceleration, mean, Z-Axis
-- tBodyAcc-std()-X: Time domain signal, Body Acceleration, Standard deviation, X-Axis 
-- tBodyAcc-std()-Y: Time domain signal, Body Acceleration, Standard deviation, Y-Axis
-- tBodyAcc-std()-Z: Time domain signal, Body Acceleration, Standard deviation, Z-Axis
-- tGravityAcc-mean()-X: Time domain signal, Gravity Acceleration, mean, X-Axis 
-- tGravityAcc-mean()-Y: Time domain signal, Gravity Acceleration, mean, Y-Axis
-- tGravityAcc-mean()-Z: Time domain signal, Gravity Acceleration, mean, Z-Axis
-- tGravityAcc-std()-X: Time domain signal, Gravity Acceleration, Standard deviation, X-Axis
-- tGravityAcc-std()-Y: Time domain signal, Gravity Acceleration, Standard deviation, Y-Axis
-- tGravityAcc-std()-Z: Time domain signal, Gravity Acceleration, Standard deviation, Z-Axis
-- tBodyAccJerk-mean()-X: Time domain signal, Body Acceleration Jerk, mean, X-Axis
-- tBodyAccJerk-mean()-Y: Time domain signal, Body Acceleration Jerk, mean, Y-Axis
-- tBodyAccJerk-mean()-Z: Time domain signal, Body Acceleration Jerk, mean, Z-Axis
-- tBodyAccJerk-std()-X: Time domain signal, Body Acceleration Jerk, Standard deviation, X-Axis
-- tBodyAccJerk-std()-Y: Time domain signal, Body Acceleration Jerk, Standard deviation, Y-Axis
-- tBodyAccJerk-std()-Z: Time domain signal, Body Acceleration Jerk, Standard deviation,
-- tBodyGyro-mean()-X: Time domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis, Unit of Measure: Radians
-- tBodyGyro-mean()-Y: Time domain signal, Body Angular Velocity (Gyroscope), mean, Y-Axis
-- tBodyGyro-mean()-Z: Time domain signal, Body Angular Velocity (Gyroscope), mean, Z-Axis
-- tBodyGyro-std()-X: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, X-Axis
-- tBodyGyro-std()-Y: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Y-Axis
-- tBodyGyro-std()-Z: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Z-Axis
-- tBodyGyroJerk-mean()-X: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, X-Axis
-- tBodyGyroJerk-mean()-Y: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, Y-Axis 
-- tBodyGyroJerk-mean()-Z: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, Z-Axis
-- tBodyGyroJerk-std()-X: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, X-Axis
-- tBodyGyroJerk-std()-Y: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, Y-Axis
-- tBodyGyroJerk-std()-Z: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, Z-Axis
-- tBodyAccMag-mean(): Time domain signal, Body Acceleration Magnitude, mean
-- tBodyAccMag-std(): Time domain signal, Body Acceleration Magntitude, Standard deviation
-- tGravityAccMag-mean(): Time domain signal, Gravity Acceleration Magnitude, mean
-- tGravityAccMag-std(): Time domain signal, Gravity Acceleration Magnitude, Standard deviation
-- tBodyAccJerkMag-mean(): Time domain signal, Body Acceleration Jerk Magntitude, mean
-- tBodyAccJerkMag-std(): Time domain signal, Body Acceleration Jerk Magntitude, Standard deviation
-- tBodyGyroMag-mean(): Time domain signal, Body Angular Velocity Magnitude (Gyroscope), mean 
-- tBodyGyroMag-std(): Time domain signal,  Body Angular Velocity Magnitude (Gyroscope), Standard deviation
-- tBodyGyroJerkMag-mean(): Time domain signal, Body Angular Velocity Jerk Magnitude (Gyroscope), mean
-- tBodyGyroJerkMag-std(): Time domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
-- fBodyAcc-mean()-X: Frequency domain signal, Body Acceleration, mean, X-Axis
-- fBodyAcc-mean()-Y: Frequency domain signal, Body Acceleration, mean, Y-Axis
-- fBodyAcc-mean()-Z: Frequency domain signal, Body Acceleration, mean, Z-Axis
-- fBodyAcc-std()-X: Frequency domain signal, Body Acceleration, Standard deviation, X-Axis
-- fBodyAcc-std()-Y: Frequency domain signal, Body Acceleration, Standard deviation, Y-Axis
-- fBodyAcc-std()-Z: Frequency domain signal, Body Acceleration, Standard deviation, Z-Axis
-- fBodyAccJerk-mean()-X: Frequency domain signal, Body Acceleration Jerk, mean, X-Axis
-- fBodyAccJerk-mean()-Y: Frequency domain signal, Body Acceleration Jerk, mean, Y-Axis
-- fBodyAccJerk-mean()-Z: Frequency domain signal, Body Acceleration Jerk, mean, Z-Axis
-- fBodyAccJerk-std()-X: Frequency domain signal, Body Acceleration Jerk, Standard deviation, X-Axis
-- fBodyAccJerk-std()-Y: Frequency domain signal, Body Acceleration Jerk, Standard deviation, Y-Axis
-- fBodyAccJerk-std()-Z: Frequency domain signal, Body Acceleration Jerk, Standard deviation, Z-Axis
-- fBodyGyro-mean()-X: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis
-- fBodyGyro-mean()-Y: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, Y-Axis
-- fBodyGyro-mean()-Z: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, Z-Axis
-- fBodyGyro-std()-X: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, X-Axis
-- fBodyGyro-std()-Y: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Y-Axis
-- fBodyGyro-std()-Z: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Z-Axis
-- fBodyAccMag-mean(): Frequency domain signal, Body Acceleration Magnitude, mean
-- fBodyAccMag-std(): Frequency domain signal, Body Acceleration Magnitude, Standard deviation
-- fBodyBodyAccJerkMag-mean(): Frequency domain signal, Body Acceleration Jerk Magnitude, mean
-- fBodyBodyAccJerkMag-std(): Frequency domain signal, Body Acceleration Jerk Magnitude, Standard deviation
-- fBodyBodyGyroMag-mean(): Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), mean
-- fBodyBodyGyroMag-std(): Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
-- fBodyBodyGyroJerkMag-mean(): Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), mean
-- fBodyBodyGyroJerkMag-std(): Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
+- tBodyAcc.mean...X: Time domain signal, Body Acceleration, mean, X-Axis
+- tBodyAcc.mean...Y: Time domain signal, Body Acceleration, mean, Y-Axis
+- tBodyAcc.mean...Z: Time domain signal, Body Acceleration, mean, Z-Axis
+- tBodyAcc.std...X: Time domain signal, Body Acceleration, Standard deviation, X-Axis 
+- tBodyAcc.std...Y: Time domain signal, Body Acceleration, Standard deviation, Y-Axis
+- tBodyAcc.std...Z: Time domain signal, Body Acceleration, Standard deviation, Z-Axis
+- tGravityAcc.mean...X: Time domain signal, Gravity Acceleration, mean, X-Axis 
+- tGravityAcc.mean...Y: Time domain signal, Gravity Acceleration, mean, Y-Axis
+- tGravityAcc.mean...Z: Time domain signal, Gravity Acceleration, mean, Z-Axis
+- tGravityAcc.std...X: Time domain signal, Gravity Acceleration, Standard deviation, X-Axis
+- tGravityAcc.std...Y: Time domain signal, Gravity Acceleration, Standard deviation, Y-Axis
+- tGravityAcc.std...Z: Time domain signal, Gravity Acceleration, Standard deviation, Z-Axis
+- tBodyAccJerk.mean...X: Time domain signal, Body Acceleration Jerk, mean, X-Axis
+- tBodyAccJerk.mean...Y: Time domain signal, Body Acceleration Jerk, mean, Y-Axis
+- tBodyAccJerk.mean...Z: Time domain signal, Body Acceleration Jerk, mean, Z-Axis
+- tBodyAccJerk.std...X: Time domain signal, Body Acceleration Jerk, Standard deviation, X-Axis
+- tBodyAccJerk.std...Y: Time domain signal, Body Acceleration Jerk, Standard deviation, Y-Axis
+- tBodyAccJerk.std...Z: Time domain signal, Body Acceleration Jerk, Standard deviation,
+- tBodyGyro.mean...X: Time domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis, Unit of Measure: Radians
+- tBodyGyro.mean...Y: Time domain signal, Body Angular Velocity (Gyroscope), mean, Y-Axis
+- tBodyGyro.mean...Z: Time domain signal, Body Angular Velocity (Gyroscope), mean, Z-Axis
+- tBodyGyro.std...X: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, X-Axis
+- tBodyGyro.std...Y: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Y-Axis
+- tBodyGyro.std...Z: Time domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Z-Axis
+- tBodyGyroJerk.mean...X: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, X-Axis
+- tBodyGyroJerk.mean...Y: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, Y-Axis 
+- tBodyGyroJerk.mean...Z: Time domain signal, Body Angular Velocity Jerk (Gyroscope), mean, Z-Axis
+- tBodyGyroJerk.std...X: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, X-Axis
+- tBodyGyroJerk.std...Y: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, Y-Axis
+- tBodyGyroJerk.std...Z: Time domain signal, Body Angular Velocity Jerk (Gyroscope), Standard deviation, Z-Axis
+- tBodyAccMag.mean..: Time domain signal, Body Acceleration Magnitude, mean
+- tBodyAccMag.std..: Time domain signal, Body Acceleration Magntitude, Standard deviation
+- tGravityAccMag.mean..: Time domain signal, Gravity Acceleration Magnitude, mean
+- tGravityAccMag.std..: Time domain signal, Gravity Acceleration Magnitude, Standard deviation
+- tBodyAccJerkMag.mean..: Time domain signal, Body Acceleration Jerk Magntitude, mean
+- tBodyAccJerkMag.std..: Time domain signal, Body Acceleration Jerk Magntitude, Standard deviation
+- tBodyGyroMag.mean..: Time domain signal, Body Angular Velocity Magnitude (Gyroscope), mean 
+- tBodyGyroMag.std..: Time domain signal,  Body Angular Velocity Magnitude (Gyroscope), Standard deviation
+- tBodyGyroJerkMag.mean..: Time domain signal, Body Angular Velocity Jerk Magnitude (Gyroscope), mean
+- tBodyGyroJerkMag.std..: Time domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
+- fBodyAcc.mean...X: Frequency domain signal, Body Acceleration, mean, X-Axis
+- fBodyAcc.mean...Y: Frequency domain signal, Body Acceleration, mean, Y-Axis
+- fBodyAcc.mean...Z: Frequency domain signal, Body Acceleration, mean, Z-Axis
+- fBodyAcc.std...X: Frequency domain signal, Body Acceleration, Standard deviation, X-Axis
+- fBodyAcc.std...Y: Frequency domain signal, Body Acceleration, Standard deviation, Y-Axis
+- fBodyAcc.std...Z: Frequency domain signal, Body Acceleration, Standard deviation, Z-Axis
+- fBodyAccJerk.mean...X: Frequency domain signal, Body Acceleration Jerk, mean, X-Axis
+- fBodyAccJerk.mean...Y: Frequency domain signal, Body Acceleration Jerk, mean, Y-Axis
+- fBodyAccJerk.mean...Z: Frequency domain signal, Body Acceleration Jerk, mean, Z-Axis
+- fBodyAccJerk.std...X: Frequency domain signal, Body Acceleration Jerk, Standard deviation, X-Axis
+- fBodyAccJerk.std...Y: Frequency domain signal, Body Acceleration Jerk, Standard deviation, Y-Axis
+- fBodyAccJerk.std...Z: Frequency domain signal, Body Acceleration Jerk, Standard deviation, Z-Axis
+- fBodyGyro.mean...X: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, X-Axis
+- fBodyGyro.mean...Y: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, Y-Axis
+- fBodyGyro.mean...Z: Frequency domain signal, Body Angular Velocity (Gyroscope), mean, Z-Axis
+- fBodyGyro.std...X: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, X-Axis
+- fBodyGyro.std...Y: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Y-Axis
+- fBodyGyro.std...Z: Frequency domain signal, Body Angular Velocity (Gyroscope), Standard deviation, Z-Axis
+- fBodyAccMag.mean..: Frequency domain signal, Body Acceleration Magnitude, mean
+- fBodyAccMag.std..: Frequency domain signal, Body Acceleration Magnitude, Standard deviation
+- fBodyBodyAccJerkMag.mean..: Frequency domain signal,  Body Acceleration Jerk Magnitude, mean
+- fBodyBodyAccJerkMag.std..: Frequency domain signal,  Body Acceleration Jerk Magnitude, Standard deviation
+- fBodyBodyGyroMag.mean..: Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), mean
+- fBodyBodyGyroMag.std..: Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
+- fBodyBodyGyroJerkMag.mean..: Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), mean
+- fBodyBodyGyroJerkMag.std..: Frequency domain signal,  Body Angular Velocity Jerk Magnitude (Gyroscope), Standard deviation
 
 
 
@@ -163,13 +163,13 @@ The final data set is 68 columns by 180 rows.  Two columns contain attributes an
 
 ### Variable labels:
 
-After considering assigning new more "human readable" variable names I made the decision to import the variable labels assigned by the physicists who designed the study.  The grading rubric for the Course Project does not mention variable names so I went to the Community Discussion Forum for guidance. 
+After considering assigning new more "human readable" variable names I made the decision to import the variable labels assigned by the physicists who designed the study. (The labels were cleaned to make them syntactically valid variable names for use in R.)  The grading rubric for the Course Project does not mention variable names so I went to the Community Discussion Forum for guidance. 
 
 
  ".....but using the existing names (and noting they represent aggregated means in the CodeBook) would be good enough."
 
 David Hood, Course Teaching Assistant
-
+ 
 https://class.coursera.org/getdata-015/forum/thread?thread_id=27
 
 
